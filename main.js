@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             clearInterval(interval);
         }
-    }, 500);
+    }, 100);
     let cookieInterval = setInterval(function(){
         if(game){
             cookies.forEach(cookie => {
