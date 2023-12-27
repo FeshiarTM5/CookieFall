@@ -2,8 +2,8 @@ let game = true;
 let cookies = [];
 let hp = 3;
 let xp = 0;
-let hearts = document.getElementsByClassName("heart");
 document.addEventListener("DOMContentLoaded", function(){
+    let hearts = document.getElementsByClassName("heart");
     let gameOverContainer = document.getElementsByClassName("ec")[0];
     let gameOverText = document.getElementsByClassName("go")[0];
     let para = document.getElementsByTagName("p")[0];
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         hearts[3 - hp].style.opacity = "100%";
                         para.innerHTML = "XP: " + xp;
                     }
-                    if(parseInt(getComputedStyle(cookie).top) < parseInt(getComputedStyle(div).height)){
+                    if(parseInt(getComputedStyle(cookie).top) < parseInt(getComputedStyle(documents.body).height)){
                         cookie.style.top = parseInt(getComputedStyle(cookie).top) + 2 + "px";
                     }
                     else{
