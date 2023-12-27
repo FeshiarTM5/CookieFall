@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             clearInterval(interval);
         }
-    }, 1000);
+    }, 100);
     let cookieInterval = setInterval(function(){
         if(game){
             cookies.forEach(cookie => {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         para.innerHTML = "XP: " + xp;
                     }
                     if(parseInt(getComputedStyle(cookie).top) < parseInt(getComputedStyle(div).height)){
-                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 2 + "px";
+                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 20 + "px";
                     }
                     else{
                         cookies[cookies.indexOf(cookie)] = 0;
