@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         para.innerHTML = "XP: " + xp;
                     }
                     if(parseInt(getComputedStyle(cookie).top) < parseInt(getComputedStyle(documents.body).height)){
-                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 2 + "px";
+                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 30 + "px";
                     }
                     else{
                         cookies[cookies.indexOf(cookie)] = 0;
