@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             clearInterval(interval);
         }
-    }, 500);
+    }, 1000);
     let cookieInterval = setInterval(function(){
         if(game){
             cookies.forEach(cookie => {
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         }
                         audio.play();
                         cookie.setAttribute("src", "crumbs.png");
+                        cookie.style.zIndex = "10"
                     })
                     if(xp >= 10 && hp < 3){
                         hp += 1;
