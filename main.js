@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             clearInterval(interval);
         }
-    }, 1000);
+    }, 500);
     let cookieInterval = setInterval(function(){
         if(game){
             cookies.forEach(cookie => {
@@ -38,14 +38,14 @@ document.addEventListener("DOMContentLoaded", function(){
                         cookie.setAttribute("src", "crumbs.png");
                         cookie.style.zIndex = "10"
                     })
-                    if(xp >= 10 && hp < 3){
+                    if(xp >= 3 && hp < 3){
                         hp += 1;
-                        xp -= 10;
+                        xp -= 3;
                         hearts[3 - hp].style.opacity = "100%";
                         para.innerHTML = "XP: " + xp;
                     }
                     if(parseInt(getComputedStyle(cookie).top) < parseInt(getComputedStyle(div).height)){
-                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 2 + "px";
+                        cookie.style.top = parseInt(getComputedStyle(cookie).top) + 4 + "px";
                     }
                     else{
                         cookies[cookies.indexOf(cookie)] = 0;
