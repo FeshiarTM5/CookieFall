@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function(){
                         cookie.setAttribute("src", "crumbs.png");
                         cookie.style.zIndex = "10"
                     })
-                    if(xp >= 1 && hp < 3){
+                    if(xp >= 5 && hp < 3){
                         hp += 1;
-                        xp -= 1;
+                        xp -= 5;
                         hearts[3 - hp].style.opacity = "100%";
                         para.innerHTML = "XP: " + xp;
                     }
